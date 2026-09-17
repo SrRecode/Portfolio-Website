@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4C_k3HqU.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYthqQBK6PYK0.woff2" />
+    <meta name="description" content="Portfolio of Shams Ur Rehman, a full-stack developer building production-style web products." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shams Ur Rehman — Full-Stack Developer" />
+    <meta property="og:description" content="Portfolio of Shams Ur Rehman, a full-stack developer building production-style web products." />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/favicon.svg" />
+    <meta property="og:site_name" content="Shams Ur Rehman" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Shams Ur Rehman — Full-Stack Developer" />
+    <meta name="twitter:description" content="Portfolio of Shams Ur Rehman, a full-stack developer building production-style web products." />
+    <meta name="twitter:image" content="/favicon.svg" />
+    <title>Shams Ur Rehman — Full-Stack Developer</title>
+    <meta name="theme-color" content="#0b0d12" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          var theme = saved === 'light' || saved === 'dark'
+            ? saved
+            : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+          document.documentElement.setAttribute('data-theme', theme);
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', theme === 'light' ? '#f5f7fa' : '#0b0d12');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
