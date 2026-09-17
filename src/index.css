@@ -131,8 +131,14 @@ h1, h2, h3 { text-wrap: balance; }
 .cv-section { content-visibility: auto; contain-intrinsic-size: auto 45rem; }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-rise, .animate-float, .animate-drift, .animate-drift-2, .wa-pulse, .mobile-menu-open { animation: none; }
+  .animate-rise, .animate-float, .animate-drift, .animate-drift-2, .wa-pulse, .mobile-menu-open, .hero-photo-dark, .hero-photo-light { animation: none; transition: none; }
 }
+
+.hero-photo { transition: opacity .5s ease; }
+.hero-photo-dark { opacity: 1; }
+.hero-photo-light { opacity: 0; }
+[data-theme="light"] .hero-photo-dark { opacity: 0; }
+[data-theme="light"] .hero-photo-light { opacity: 1; }
 
 @keyframes fadeDown {
   from { opacity: 0; transform: translateY(-6px); }

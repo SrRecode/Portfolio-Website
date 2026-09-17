@@ -15,7 +15,7 @@ export default function Navbar() {
   }, [open])
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-line bg-ink/85 backdrop-blur-xl">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-line bg-ink/85 backdrop-blur-xl transition-colors duration-500">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="flex min-h-11 items-center font-display text-lg font-bold tracking-tight">SU<span className="text-cyan">.</span></a>
         <nav className="hidden items-center gap-8 md:flex">

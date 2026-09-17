@@ -11,7 +11,7 @@ const Contact = lazy(() => import('./components/Contact'))
 
 const App = () => {
   return (
-    <div className="min-h-screen overflow-hidden bg-ink text-copy">
+    <div className="min-h-screen overflow-hidden bg-ink text-copy transition-colors duration-500">
       <Navbar />
       <main>
         <Hero />

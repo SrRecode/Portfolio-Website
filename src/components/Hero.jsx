@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react'
 import { profile } from '../data/profile'
 import { GithubIcon, LinkedInIcon } from './SocialIcons'
+import darkPortfolio from '../assets/dark-portfolio.jpg'
+import lightPortfolio from '../assets/light-portfolio.jpg'
 
 export default function Hero() {
   const reduce = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -38,7 +40,12 @@ export default function Hero() {
           </div>
         </div>
         <div className="hidden justify-self-end md:flex md:flex-col md:items-end md:gap-6">
-          <div className="animate-float h-32 w-32 border border-cyan/50 p-3"><div className="flex h-full items-end justify-end bg-cyan/10 p-3"><span className="font-mono text-4xl text-cyan">01</span></div></div>
+          <div className="animate-float w-[300px] lg:w-[400px]">
+            <figure className="relative aspect-[3/2] overflow-hidden border border-line-strong bg-panel shadow-2xl shadow-ink/60">
+              <img src={darkPortfolio} alt="Portfolio website homepage in dark mode" width={1280} height={853} decoding="async" fetchPriority="high" className="hero-photo hero-photo-dark absolute inset-0 h-full w-full object-cover object-top" />
+              <img src={lightPortfolio} alt="Portfolio website homepage in light mode" width={1280} height={853} decoding="async" loading="lazy" className="hero-photo hero-photo-light absolute inset-0 h-full w-full object-cover object-top" />
+            </figure>
+          </div>
           <div className="flex gap-3">
             <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="flex h-11 w-11 items-center justify-center border border-line text-muted transition hover:border-cyan hover:text-cyan"><GithubIcon size={19} /></a>
             <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="flex h-11 w-11 items-center justify-center border border-line text-muted transition hover:border-cyan hover:text-cyan"><LinkedInIcon size={19} /></a>
