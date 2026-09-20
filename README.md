@@ -12,7 +12,7 @@ Deployed on [Vercel](https://vercel.com). Pushing to `main` triggers an automati
 
 | Dark mode | Light mode |
 | --- | --- |
-| <img src="./src/assets/website-dark-portfolio.jpg" width="480"> | <img src="./src/assets/webiste-light-portfolio.jpg" width="480"> |
+| <img src="./src/assets/website-dark-portfolio.jpg" width="480"> | <img src="./src/assets/website-light-portfolio.jpg" width="480"> |
 
 ## Features
 
